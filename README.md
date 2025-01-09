@@ -14,4 +14,3 @@ Highlights:
 - Contact Form: Easily send emails through an integrated form.
 
 - Version Control: Managed updates and code through Git and GitHub Pages for seamless deployment.
-
