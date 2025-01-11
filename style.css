@@ -16,17 +16,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 4rem;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   color: white;
-  padding: 0.5rem 1.5rem;
+  padding: 0.4rem 1.2rem;
   border-radius: 3rem;
   z-index: 100;
 }
 .logo {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   text-wrap: nowrap;
   transition: 0.3s ease-in-out;
@@ -36,7 +36,7 @@ header {
 }
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.6rem;
 }
 li a {
   position: relative;
@@ -58,12 +58,12 @@ li a:hover::before {
   width: 100%;
 }
 .visit-btn {
-  padding: 0.8rem 1.5rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 3rem;
   border: none;
   background-color: black;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: white;
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -82,7 +82,7 @@ li a:hover::before {
 
 section {
   min-height: 100vh;
-  padding: 8rem 12%;
+  padding: 6rem 10%;
   width: 100%;
   position: relative;
 }
@@ -95,7 +95,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10rem;
+  gap: 8rem;
 }
 .about img {
   width: 30vw;
@@ -112,19 +112,19 @@ section {
   gap: 1.5rem;
 }
 .info-box h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 500;
   opacity: 0.8;
 }
 .info-box h1 {
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: 600;
 }
 .info-box span {
   background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
   background-clip: text;
   color: transparent;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .btn-group {
   display: flex;
@@ -158,9 +158,9 @@ section {
 
 .section-title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: 600;
-  margin-bottom: 3rem;
+  margin-bottom: 2.4rem;
 }
 .experience-info {
   display: flex;
@@ -180,7 +180,7 @@ section {
 .grid-card {
   border: 2px solid black;
   border-radius: 3rem;
-  padding: 3rem 3rem;
+  padding: 2.4rem 2.4rem;
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -198,7 +198,7 @@ section {
   margin-bottom: 1rem;
 }
 .grid-card span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   background: linear-gradient(to right, #009dff, #ff00ff);
   background-clip: text;
@@ -220,7 +220,7 @@ section {
   gap: 2rem;
 }
 .project-card {
-  padding: 3rem 2rem;
+  padding: 2.4rem 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,7 +252,7 @@ section {
 }
 .project-card h3 {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .input-box {
@@ -268,18 +268,18 @@ section {
   position: relative;
   border-radius: 3rem;
   border: 2px solid black;
-  padding: 1.5rem 4rem; /* Reduced padding */
-  font-size: 1.2rem; /* Smaller font size */
+  padding: 1.2rem 4.8rem;
+  font-size: 1.6rem;
 }
 .input-box input::placeholder {
-  font-size: 1.2rem; /* Smaller placeholder text */
+  font-size: 1.6rem;
 }
 .input {
   position: relative;
 }
 .input i {
   position: absolute;
-  font-size: 1.5rem; /* Smaller icon size */
+  font-size: 1.6rem;
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
