@@ -1,9 +1,8 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   text-decoration: none;
   scroll-behavior: smooth;
   list-style: none;
@@ -148,12 +147,12 @@ section {
   display: flex;
   gap: 2rem;
 }
-.socials a i {
+.socials i {
   font-size: 2.5rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-.socials a i:hover {
+.socials i:hover {
   transform: scale(1.1);
 }
 
@@ -205,13 +204,13 @@ section {
   background-clip: text;
   color: transparent;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar{
   width: 20px;
 }
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
   background-color: rgb(219, 219, 219);
 }
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
   background: linear-gradient(to bottom, rgb(0, 157, 255), rgb(255, 0, 255));
 }
 
@@ -242,7 +241,7 @@ section {
   border: 2px solid white;
   color: white;
 }
-.project-card:hover .btn:hover {
+.project-card:hover .btn:hover{
   border: 2px solid white;
   background-color: white;
   color: black;
@@ -269,21 +268,41 @@ section {
   position: relative;
   border-radius: 3rem;
   border: 2px solid black;
-  padding: 2rem 8rem;
-  font-size: 3rem;
+  padding: 1.5rem 4rem; /* Reduced padding */
+  font-size: 1.2rem; /* Smaller font size */
 }
 .input-box input::placeholder {
-  font-size: 3rem;
+  font-size: 1.2rem; /* Smaller placeholder text */
 }
 .input {
   position: relative;
 }
 .input i {
   position: absolute;
-  font-size: 4rem;
+  font-size: 1.5rem; /* Smaller icon size */
   top: 50%;
-  left: 10px;
-  transform: translate(50%, -50%);
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.input textarea {
+  position: relative;
+  border-radius: 3rem;
+  border: 2px solid black;
+  padding: 1.5rem 4rem; /* Reduced padding */
+  font-size: 1.2rem; /* Smaller font size */
+  width: 100%;
+  min-height: 150px;
+  resize: vertical;
+}
+
+.input textarea::placeholder {
+  font-size: 1.2rem; /* Smaller placeholder text */
+}
+
+.input-box .btn {
+    padding: 0.8rem 1.5rem;  /* Match GitHub repo button padding */
+    font-size: 1.2rem;       /* Match font size */
 }
 
 footer {
@@ -298,7 +317,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
-footer ul {
+footer ul{
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -307,12 +326,68 @@ footer ul li a {
   color: black;
   font-weight: 600;
 }
-.copyright {
+.copyright{
   font-weight: 300;
   margin-top: 2rem;
 }
 
-@media (max-width: 1280px) {
+.qualification-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-direction: row; /* Ensure horizontal layout */
+}
+.qualification img {
+  width: 24vw;
+  border-radius: 3rem;
+}
+.qualification .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.input-box .form-row {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.input-box input {
+  position: relative;
+  border-radius: 3rem;
+  border: 2px solid black;
+  padding: 1.5rem 6rem;
+  font-size: 2rem;
+}
+.input-box input::placeholder {
+  font-size: 2rem;
+}
+.input {
+  position: relative;
+}
+.input i {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 10px;
+  transform: translate(50%, -50%);
+}
+
+/* Update responsive styles */
+@media (max-width: 768px) {
   header {
     padding: 1rem 2rem;
     gap: 2rem;
@@ -324,14 +399,28 @@ footer ul li a {
     flex-direction: column;
   }
   .input-box input {
-    padding: 2rem 5rem;
-    font-size: 2.5rem;
+    padding: 1.2rem 4rem;
+    font-size: 1rem;
   }
   .input-box input::placeholder {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   .input-box i {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .qualification-info {
+    flex-direction: column;
+  }
+  .input-box .form-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-box .input {
+    width: 80%;
+  }
+  .input-box .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -350,8 +439,8 @@ footer ul li a {
     flex-direction: column;
   }
   .input-box input {
-    padding: 1rem 2rem;
-    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
   }
   .info-box input::placeholder {
     font-size: 1.5rem;
@@ -362,7 +451,10 @@ footer ul li a {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .experience-info img {
+  .experience-info img{
+    width: 70vw;
+  }
+  .qualification-info img{
     width: 70vw;
   }
 }
@@ -371,7 +463,7 @@ footer ul li a {
   .visit-btn {
     display: none;
   }
-
+ 
   header #menu-icon {
     display: block;
   }
@@ -415,7 +507,7 @@ footer ul li a {
   .input-box input::placeholder {
     font-size: 1.5rem;
   }
-  footer ul {
+  footer ul{
     gap: 1rem;
   }
 }
