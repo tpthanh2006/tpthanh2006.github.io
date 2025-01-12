@@ -2,7 +2,7 @@
 
 Welcome to my dynamic and interactive portfolio, where I showcase my technical expertise in HTML, CSS, JavaScript, and Git/GitHub. This responsive site is designed with a user-friendly interface and optimized for accessibility across all devices, from mobile to desktop.
 
-Highlights:
+### Highlights:
 - Technologies Used: HTML, CSS, JavaScript, Git/GitHub
 
 - Responsive Design: Developed with a mobile-first approach, ensuring compatibility with all devices.
