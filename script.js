@@ -7,7 +7,7 @@ menuIcon.onclick = () => {
 
 // Initialize EmailJS
 (function() {
-    emailjs.init("urjO9jFPJ9mH0EYM2"); // Add your EmailJS public key here
+    emailjs.init("urjO9jFPJ9mH0EYM2"); // Replace with your EmailJS public key
 })();
 
 // Form handling
