@@ -264,7 +264,7 @@ section {
 .project-card .btn-group {
   width: 100%;
   display: flex;
-  flex-direction: row; /* Changed from column to row */
+  flex-direction: row;
   gap: 1rem;
   padding: 1rem;
   justify-content: center; /* Center buttons */
